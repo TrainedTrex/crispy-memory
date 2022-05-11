@@ -1,9 +1,0 @@
-{
-    "tleFile": "./Data/Satellites.tle",
-    "outputFile": "./Data/AGI_Output.czml",
-    "configFile": "./Data/Satellites.config.txt",
-    "poiFile": "./Data/placesOfInterest.csv",
-    "useConfig": false,
-    "computerName": "C1202633-00:5000",
-	"licenseFile" : "./AGI.Foundation.lic"
-}

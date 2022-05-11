@@ -11,7 +11,7 @@ If you would like the change the port number of the STK Components Container (Py
 
 ## Inputs ## 
 
-All the inputs are found in the \TLE_Folder\ Folder. The Config.json specifies the location of the input (TLE) file, output file, config file, computerName, and license file. 
+All the inputs are found in the \Data_Folder\ Folder. The Config.json specifies the location of the input (TLE) file, output file, config file, computerName, and license file. 
 
 | **Flag** | **Value** |
 | :----- | :----- |
@@ -45,15 +45,15 @@ to run the containers
 | :----- | :----- |
 | -p, --publish | <localport>:8080 |
 | --name | desired container name |
-| -v, --volume | <LocalFileLocation>/tleViewer-docker/TLE_Folder:app/Data  |
+| -v, --volume | <LocalFileLocation>/tleViewer-docker/Data_Folder:app/Data  |
 | -d, --detach | Detatch process from Command Prompt or PowerShell |
 
 ### Example Run Command ###
 
 ```docker 
-docker run -d --name cesium -v C:\Users\<UserName>\Documents\docker\tleViewer-docker\TLE_Folder:/app/Data --publish 8080:8080 node-cesium
+docker run -d --name cesium -v C:\Users\<UserName>\Documents\docker\tleViewer-docker\Data_Folder:/app/Data --publish 8080:8080 node-cesium
 
-docker run -d --name propagator -v C:\Users\<UserName>\Documents\docker\tleViewer-docker\TLE_Folder:/app/Data --publish 5000:5000 python-prop
+docker run -d --name propagator -v C:\Users\<UserName>\Documents\docker\tleViewer-docker\Data_Folder:/app/Data --publish 5000:5000 python-prop
 ```
 
 ## Testing ## 
