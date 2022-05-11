@@ -4,6 +4,6 @@
     "configFile": "./Data/Satellites.config.txt",
     "poiFile": "./Data/placesOfInterest.csv",
     "useConfig": false,
-    "computerName": "CCOMPUTERNAME:5000",
+    "computerName": "C1202633-00:5000",
 	"licenseFile" : "./AGI.Foundation.lic"
 }

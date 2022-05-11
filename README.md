@@ -11,22 +11,22 @@ If you would like the change the port number of the STK Components Container (Py
 
 ## Inputs ## 
 
-All the inputs are found in the \tleViewer-docker\TLE_Folder\ Folder. The Config.json specifies the location of the input (TLE) file, output file, config file, computerName, and license file. 
+All the inputs are found in the \TLE_Folder\ Folder. The Config.json specifies the location of the input (TLE) file, output file, config file, computerName, and license file. 
 
 | **Flag** | **Value** |
 | :----- | :----- |
-| tleFile | `location of the TLE File in the container` |
-| outputFile | `location of the .czml output file in the container` |
-| configFile | `NOT CURRENTLY USED: Location of the configfile.txt in the container` |
-| useConfig | `sets whether the configFile.txt will be used` |
-| computerName | `name of the computer and port number that is running the propagation (python) container` |
-| licenseFile | `location of the .lic license File in the container` |
+| tleFile | location of the TLE File in the container |
+| outputFile | location of the .czml output file in the container |
+| configFile | NOT CURRENTLY USED: Location of the configfile.txt in the container |
+| useConfig | sets whether the configFile.txt will be used |
+| computerName | name of the computer and port number that is running the propagation (python) container |
+| licenseFile | location of the .lic license File in the container |
 
 ## Build both images ## 
 
-You will want to replace the Agi.Foundation.lic.PLACEHOLDER file in 'tleViewer-docker\prop-docker\' with your STK Compoents license. 
+You will want to replace the Agi.Foundation.lic.PLACEHOLDER file in '\prop-docker\' with your STK Compoents license. 
 
-Next you will want to unzip and move the STK Components for .NET folder into the \prop-docker\ folder, so the folder structure looks like \tleViewer-docker\prop-docker\STKComponentsForDotNet2021r1. 
+Next you will want to unzip and move the STK Components for .NET folder into the \prop-docker\ folder, so the folder structure looks like \prop-docker\STKComponentsForDotNet2021r1. 
 
 ### Example build commands ### 
 
@@ -43,10 +43,10 @@ to run the containers
 
 | **Flag** | **Value** |
 | :----- | :----- |
-| -p, --publish | `<localport>:8080` |
-| --name | `desired container name` |
-| -v, --volume | `<LocalFileLocation>/tleViewer-docker/TLE_Folder:app/Data ` |
-| -d, --detach | `Detatch process from Command Prompt or PowerShell` |
+| -p, --publish | <localport>:8080 |
+| --name | desired container name |
+| -v, --volume | <LocalFileLocation>/tleViewer-docker/TLE_Folder:app/Data  |
+| -d, --detach | Detatch process from Command Prompt or PowerShell |
 
 ### Example Run Command ###
 
