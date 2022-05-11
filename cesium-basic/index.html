@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Use correct character set. -->
+  <meta charset="utf-8" />
+  <!-- Tell IE to use the latest, best version. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <title>AGI TLE Propagator</title>
+
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/site.css" />
+  <link rel="stylesheet" href="./node_modules/cesium/Build/Cesium/Widgets/widgets.css" />
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./node_modules/cesium/Build/Cesium/Cesium.js"></script>
+  <script src="./node_modules/d3/dist/d3.min.js"></script>
+  <script src="./node_modules/d3-scale/dist/d3-scale.min.js"></script>
+  <script src="./node_modules/d3-time/dist/d3-time.min.js"></script>
+  <script src="./js/site.js"></script>
+  <script src="./js/_run.js"></script>
+</head>
+
+<body>
+  <div id="cesiumBanner">
+    <center><b style="color:white;size:12px">UNCLASSIFIED</b></center>
+  </div>
+  <div id="cesiumContainer"></div>
+  <div class="collapse" id="collapseFilters">
+    <div class="card card-body">
+      <input type="checkbox" class="form-check-input">
+    </div>
+  </div>
+  <div id="FilterButton">
+    <button type="button" class="cesium-button cesium-button-toolbar" data-toggle="collapse"
+      data-target="#collapseFilters">
+      <span class="glyphicon glyphicon-tags"></span>
+    </button>
+  </div>
+  <div id="UpdateScene">
+    <button type="button" class="cesium-button cesium-button-toolbar">
+      <span class="glyphicon glyphicon-option-vertical"></span>
+    </button>
+  </div>
+  <div class="backdrop" id="menu" style="display:inline-block">
+    <h4>Display Options</h4>
+    <div class="nowrap">
+      <input class="checkboxes" id="Show Orbits" name="path" type="checkbox">
+      <label>Show Orbit Path</label>
+    </div>
+    <div class="nowrap">
+      <input class="checkboxes" id="Show Labels" name="label" type="checkbox" checked>
+      <label>Show Labels</label>
+    </div>
+  </div>
+  <div class="backdrop" id="filterMenu" style="display:inline-block">
+    <h4>Filter Options</h4>
+    <div class="OrbitRegime" id="OrbitRegime">
+      <h5>Orbit Regime</h5>
+    </div>
+  </div>
+</body>
+</html>
