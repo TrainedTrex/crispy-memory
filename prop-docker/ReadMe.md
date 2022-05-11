@@ -4,6 +4,7 @@
 $ cd C:\Users\<USERNAME>\Documents\tleViewer-docker\prop-docker\
 
 # Build Image
+
 docker build --tag python-prop .
 
 # Run Container using image that was just built
