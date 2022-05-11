@@ -1,7 +1,9 @@
 # STK Components / Cesium Visuals Containers #
 STK Components TLE Propagation w/ Cesium Visualization in disperate containers
 
-> Unofficial STK Components and Cesium Vis Containers
+> Unofficial STK Components and Cesium Visualization Containers
+
+![Visuals](https://github.com/TrainedTrex/crispy-memory/blob/main/Visuals.PNG)
 
 ## Prerequirements ##
 
