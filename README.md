@@ -69,7 +69,4 @@ Go to: http://localhost:5000/Propagate
 > This will kick off the container to propagate the List of
 
 Go to: http://localhost:8080
-> This will display the customer Cesium frontend and will populate with TLE Data
-
-## END ##
-
+> This will display the Cesium frontend with propagated TLE Data
