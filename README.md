@@ -9,7 +9,7 @@ STK Components TLE Propagation w/ Cesium Visualization in disperate containers
 
 This requires you to download the STK Components .NET Libraries under Developer Tools from [AGI Downloads](https://support.agi.com/downloads/3/) and obtain a license by contacting [AGI Support](mailto:support@agi.com).
 
-If you would like the change the port number of the STK Components Container (Python Container), You must update the config.json with the new port number. 
+If you would like the change the port number of the STK Components Container (Python Container), You must update the config.json with the new port number as well as any changes to the docker run command. 
 
 ## Inputs ## 
 
